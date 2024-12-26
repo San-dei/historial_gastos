@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+:root{
+  /*Pagina*/
+  --forest-green:#2B3E34;
+  --cypress:#3F4E40;
+  --olive-drab:#546A50;
+  --moss-green:#7E8A6D;
+  --lichen:#B5B89B;
+
+  /*Fuentes*/
+  --light-text: #FFFFFF;
+  --dark-text: #000000;
+}

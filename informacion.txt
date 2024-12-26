@@ -1,0 +1,101 @@
+Registro de gastos: Un formulario para agregar gastos con detalles como categoría, monto, fecha, descripción.
+
+Categorías de gastos: Alimentación, transporte, entretenimiento, vivienda, etc.
+
+Análisis visual: Gráficos (pasteles, barras) que muestren distribución o evolución de los gastos.
+
+Filtros y búsquedas: Permitir filtrar por rango de fechas, categorías, o buscar palabras clave.
+
+Presupuestos: Establecer límites por categoría y mostrar alertas si se exceden.
+
+Historial: Mostrar un listado completo de los gastos registrados.
+
+Exportar datos: Poder guardar los datos en un archivo CSV o Excel.
+
+1. Base del proyecto: Registro de gastos
+Esta es la funcionalidad principal, y muchas otras dependen de que los datos se registren correctamente.
+
+Pasos a seguir:
+
+Crea una página o componente llamado GastosForm con un formulario para ingresar detalles como:
+Categoría: Usa un <select> con opciones como Alimentación, Transporte, etc.
+Monto: Un <input> con validación para aceptar solo números.
+Fecha: Un <input type="date">.
+Descripción: Un <textarea> opcional.
+Configura Zustand para gestionar el estado de los gastos:
+Crea un estado llamado expenses (un array).
+Agrega una acción en Zustand para añadir un gasto al estado.
+
+
+2. Historial de gastos
+Una vez que los gastos están registrados, el siguiente paso lógico es mostrarlos.
+
+Pasos a seguir:
+
+Crea un componente GastosHistorial que lea el estado de gastos desde Zustand y los liste en una tabla o lista.
+Muestra columnas como:
+Categoría
+Monto
+Fecha
+Descripción
+Agrega un botón para eliminar un gasto y configura una acción en Zustand para manejarlo.
+
+
+
+3. Categorías de gastos
+Una vez que tienes el historial, puedes organizar los datos por categorías.
+ 
+Pasos a seguir:
+
+Agrega un filtro básico en la lista para seleccionar una categoría y mostrar solo los gastos asociados.
+Opcional: Crea un resumen de gastos totales por categoría.
+
+
+
+4. Filtros y búsquedas
+Ahora que tienes una lista funcional, agrega filtros y búsquedas.
+
+Pasos a seguir:
+
+Agrega un rango de fechas para mostrar solo los gastos dentro de un período.
+Agrega un campo de búsqueda que permita buscar palabras clave en la descripción.
+
+
+
+5. Presupuestos
+Esta funcionalidad requiere lógica adicional, pero puedes integrarla fácilmente con Zustand.
+
+Pasos a seguir:
+
+Define presupuestos por categoría en el estado global (puedes usar otro estado en Zustand).
+Muestra una alerta en el formulario o en el historial si un gasto excede el presupuesto de su categoría.
+
+
+
+6. Análisis visual
+Es un buen momento para agregar gráficos.
+
+Pasos a seguir:
+
+Usa librerías como Chart.js o Recharts para mostrar:
+Un gráfico de pastel que muestre la proporción de gastos por categoría.
+Un gráfico de barras que muestre los gastos por mes.
+Los datos del gráfico se pueden obtener del estado global de expenses.
+
+
+
+7. Exportar datos
+Esto es más complejo, pero puede hacerse al final.
+
+Pasos a seguir:
+
+Usa una librería como papaparse para generar un archivo CSV con los datos del historial.
+Agrega un botón que permita al usuario descargar el archivo.
+Orden recomendado:
+Registro de gastos (formularios y Zustand).
+Historial de gastos (mostrar y manejar el estado global).
+Categorías y filtros (organización básica).
+Presupuestos (agregar validaciones al registrar gastos).
+Análisis visual (gráficos con datos del estado).
+Exportar datos (guardar en CSV o Excel).
+

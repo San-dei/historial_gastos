@@ -1,0 +1,87 @@
+.modal_conteiner{
+  height: 100vh;
+  width: 100%;
+  
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_close{
+  position:absolute;
+  left: 85%;
+  top: 7%;
+
+  height: 2rem;
+  width: 2rem;
+}
+
+.modal{
+  width: 80%;
+  height: 70vh;
+  
+  border-radius: 5px;
+  background-color: var(--cypress);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: var(--forest-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--lichen);
+  border-radius: 5px;
+}
+
+.modal_categorias_conteiner{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+.modal_input_conteiner{
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+  margin-bottom: .8rem;
+}
+
+.modal_input{
+  border: 1.5px solid var(--forest-green);
+  border-radius: 5px;
+  width: 70%;
+  height: 2rem;
+}
+
+.modal_order{
+  padding: 8px;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.modal_button{
+  border: 1px solid var(--forest-green);
+  background-color:var(--moss-green);
+  color: var(--light-text);
+  border-radius: 4px;
+  height: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
